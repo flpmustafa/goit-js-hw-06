@@ -1,4 +1,5 @@
 const registerform = document.querySelector('.login-form');
+
 registerform.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
@@ -11,12 +12,12 @@ function handleSubmit(event) {
    alert("You have not entered all the data, fill in all the fields!");
   };
 
-let Email = `Email: ${email.value}`; 
-let Pass = `Password: ${email.value}`
+let Email = `${email.value}`; 
+let Password = `${email.value}`
 
-let obj = {Email, Pass};
+let obj = {Email, Password};
 
-console.log(obj);
+console.dir(obj);
 
   //console.log(`Email: ${email.value}, Password: ${email.value}`);
   event.currentTarget.reset(); };
